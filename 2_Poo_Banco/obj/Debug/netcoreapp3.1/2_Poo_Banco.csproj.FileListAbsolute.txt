@@ -1,0 +1,14 @@
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\bin\Debug\netcoreapp3.1\2_Poo_Banco.exe
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\bin\Debug\netcoreapp3.1\2_Poo_Banco.deps.json
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\bin\Debug\netcoreapp3.1\2_Poo_Banco.runtimeconfig.json
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\bin\Debug\netcoreapp3.1\2_Poo_Banco.runtimeconfig.dev.json
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\bin\Debug\netcoreapp3.1\2_Poo_Banco.dll
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\bin\Debug\netcoreapp3.1\2_Poo_Banco.pdb
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\obj\Debug\netcoreapp3.1\2_Poo_Banco.csproj.AssemblyReference.cache
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\obj\Debug\netcoreapp3.1\2_Poo_Banco.GeneratedMSBuildEditorConfig.editorconfig
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\obj\Debug\netcoreapp3.1\2_Poo_Banco.AssemblyInfoInputs.cache
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\obj\Debug\netcoreapp3.1\2_Poo_Banco.AssemblyInfo.cs
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\obj\Debug\netcoreapp3.1\2_Poo_Banco.csproj.CoreCompileInputs.cache
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\obj\Debug\netcoreapp3.1\2_Poo_Banco.dll
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\obj\Debug\netcoreapp3.1\2_Poo_Banco.pdb
+D:\Usuarios\Jean Pierre\Desktop\Desarrollo de Software\4 - Cuarto Semestre\2 - Herramientas de Programación 3\1_Clase_3\2_Poo_Banco\2_Poo_Banco\obj\Debug\netcoreapp3.1\2_Poo_Banco.genruntimeconfig.cache
