@@ -98,28 +98,77 @@ namespace _2_Poo_Banco
         //}        
     }
 
-class User
-{
-    public string Name { get; set; }    
+//class User
+//{
+//    public string Name { get; set; }
 
-    public User(string _name)
-    {
-        this.Name = _name;
-    }
+//    public User(string _name)
+//    {
+//        this.Name = _name;
+//    }
+//}
+
+public class User
+{
+    public string name { get; set; }
+    public int Amount { get; set; }
+
+    //public User(string _name, int _amount)
+    //{
+    //    this.name = _name;
+    //    this.Amount = _amount;
+    //}
 }
 
-class Banco
+class Bank
 {
     List<User> Users = new List<User>();
-    public void addName() //Agregar usuario
-    {
-        string name = "";
+
+    public void AddName() //Agregar usuario
+    {      
         Console.WriteLine("Ingrese su nombre");
-        name = Console.ReadLine();
-        Users.Add(new User(name));
+        string name = Console.ReadLine();
+        Console.WriteLine("Ingese su monto inicial para crear cuenta");
+        int amount = int.Parse(Console.ReadLine());
+
+        User UsersBank = new User();
+        UsersBank.name = name;
+        UsersBank.Amount = amount;
+
+        Users.Add(UsersBank);
+
+        Console.WriteLine("\nUsuario registrado correctamente");
     }
 
-    public void MenuUsers ()
+    public void ReadUser() //Leer usuario
+    {
+        foreach (User item in Users)
+        {
+            Console.WriteLine(item.name);
+            Console.WriteLine(item.Amount);           
+        }
+        //for (int i = 0; i < Users.Count; i++)
+        //{
+        //    MenuUsers();
+        //}
+    }
+
+    public void ToDeposit (User Users) //Depositar
+    {
+        //amount += amounts;
+    }
+
+    public void Withdraw(User Users) //Retirar
+    {
+        //amount -= withdraws;
+    }
+
+    public void ShowAmount(User Users) //Mostrar monto
+    {
+        //Console.Write("El dinero en la cuenta es: " + amount);
+    }
+
+    public void MenuUsers () //Menú para usuarios
     {
         int options;
 
@@ -136,20 +185,28 @@ class Banco
             {                
                 Console.WriteLine("Ingrese cuanto dinero va a depositar");
                 //Users.Add (new User);
+                break;
             }
             else if (options == 2)
             {
                 Console.WriteLine("Ingrese el monto a retirar");
+                break;
+            }
+            else if (options == 3)
+            {
+                break;
             }
             else
             {
-                Console.WriteLine("Su saldo es: ");                
+                MenuBank();          
             }
         }
     }
 
-    public void MenuBank()
+    static void MenuBank() //Menú banco
     {
+        Bank bank = new Bank();
+
         int options;
 
         Console.WriteLine("Selecciones una opción");
@@ -162,20 +219,20 @@ class Banco
         {
             if (options == 1)
             {
-                Console.WriteLine("Ingrese su nombre");
+                bank.ReadUser();
+                //break;
             }
             else
             {
-                addName();
-                MenuUsers();
+                bank.AddName();
+                bank.MenuUsers();
                 break;
             }
         }
     }
     static void Main(string[] args)
     {
-        Banco bank = new Banco();
-        bank.MenuBank();
+        MenuBank();
     }
 
 }   
