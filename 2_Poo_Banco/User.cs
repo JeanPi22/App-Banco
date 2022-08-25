@@ -6,18 +6,33 @@ namespace _2_Poo_Banco
 {
     public class User
     {
-        public string name { get; set; }
+        public string Name { get; set; }
         public int Amount { get; set; }
 
-        public User(string _name, int _amount)
+        public User()
         {
-            this.name = _name;
-            this.Amount = _amount;
+            this.Name = "";
+            this.Amount = 0;
         }
 
-        ~User()
+        public void ToDeposit() //Depositar
         {
-
+            //amount += amounts;
+            Console.WriteLine("Ingrese cuanto dinero va a depositar");
+            Amount += this.Amount;
         }
+
+        public void Withdraw() //Retirar
+        {
+            //amount -= withdraws;
+            Console.WriteLine("Ingrese el monto a retirar");
+            Amount -= this.Amount;
+        }
+
+        public void ShowAmount() //Mostrar monto
+        {
+            Console.Write("El dinero en la cuenta es: " + Amount);
+        }
+
     }
 }
