@@ -6,19 +6,22 @@ using System.Collections.Generic;
 //y lo que le corresponde a cada cliente de ese total.
 
 namespace _2_Poo_Banco
-{  
+{
     public class Bank
     {
         List<User> ListUsers = new List<User>();
 
         public void AddName() //Agregar usuario
         {
+            string name;
+            int amount;
+
             User UsersBank = new User();
 
             Console.WriteLine("Ingrese su nombre");
-            string name = Console.ReadLine();
+            name = Console.ReadLine();
             Console.WriteLine("Ingese su monto inicial para crear cuenta");
-            int amount = int.Parse(Console.ReadLine());
+            amount = int.Parse(Console.ReadLine());
 
             UsersBank.Name = name;
             UsersBank.Amount = amount;
@@ -30,37 +33,75 @@ namespace _2_Poo_Banco
 
         public void ReadUser() //Leer usuario
         {
+            string AuxName;
+
+            Console.WriteLine("Ingrese su nombre");
+            AuxName = Console.ReadLine();
+
             foreach (User item in ListUsers)
             {
-                Console.WriteLine(item.Name);
-                //Console.WriteLine(item.Amount);
+                if (AuxName == item.Name)
+                {
+                    Console.WriteLine("\nBienvenido " + item.Name);
+                    MenuUsers();
+                }
+            }
+        }
+
+        public void MenuBank() //Menú banco
+        {
+            int options;
+
+            Console.WriteLine("\nSelecciones una opción");
+            Console.WriteLine("1 - Usuario");
+            Console.WriteLine("2 - Registrar usuario");
+            Console.WriteLine("3 - Salir");
+            options = int.Parse(Console.ReadLine());
+
+            while (options != 1 || options != 2)
+            {
+                if (options == 1)
+                {                    
+                    ReadUser();
+                    break;
+                }
+                else if (options == 2)
+                {
+                    AddName();
+                    MenuBank();
+                    break;
+                }
+                else
+                {
+                    break;
+                }
             }
         }
 
         public void MenuUsers() //Menú para usuarios
         {
-            int options;
+            int option;
 
-            Console.WriteLine("Selecciones una opción");
+            Console.WriteLine("\nSelecciones una opción");
             Console.WriteLine("1 - Depositar");
             Console.WriteLine("2 - Retirar");
             Console.WriteLine("3 - Saldo");
             Console.WriteLine("4 - Salir");
-            options = int.Parse(Console.ReadLine());
+            option = int.Parse(Console.ReadLine());
 
-            while (options != 1 || options != 2 || options != 3)
+            while (option != 1 || option != 2 || option != 3)
             {
-                if (options == 1)
+                if (option == 1)
+                {
+
+                    break;
+                }
+                else if (option == 2)
                 {
                     
                     break;
                 }
-                else if (options == 2)
-                {
-                    
-                    break;
-                }
-                else if (options == 3)
+                else if (option == 3)
                 {
                     break;
                 }
@@ -71,36 +112,7 @@ namespace _2_Poo_Banco
                 }
             }
         }
-
-        public void MenuBank() //Menú banco
-        {           
-            int options;
-
-            Console.WriteLine("Selecciones una opción");
-            Console.WriteLine("1 - Usuario");
-            Console.WriteLine("2 - Registrar usuario");
-            Console.WriteLine("3 - Salir");
-            options = int.Parse(Console.ReadLine());
-
-            while (options != 1 || options != 2)
-            {
-                if (options == 1)
-                {
-                    ReadUser();
-                    break;
-                }
-                else if (options == 2)
-                {
-                    AddName();
-                    MenuUsers();
-                    break;
-                }
-                else
-                {
-                    break;
-                }
-            }
-        }
+        
         static void Main(string[] args)
         {
             Bank bank = new Bank();
