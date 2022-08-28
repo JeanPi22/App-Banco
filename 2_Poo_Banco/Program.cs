@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace _2_Poo_Banco
 {
-    public class Bank
+    public class Bank:User
     {
         List<User> ListUsers = new List<User>();
 
@@ -43,12 +43,12 @@ namespace _2_Poo_Banco
                 if (AuxName == item.Name)
                 {
                     Console.WriteLine("\nBienvenido " + item.Name);
-                    MenuUsers();
+                    MenuUsers(AuxName);
                 }
             }
         }
 
-        public void MenuBank() //Menú banco
+        public void MenuBank()//Menú banco
         {
             int options;
 
@@ -78,7 +78,7 @@ namespace _2_Poo_Banco
             }
         }
 
-        public void MenuUsers() //Menú para usuarios
+        public void MenuUsers(string AuxName) //Menú para usuarios
         {
             int option;
 
@@ -93,16 +93,38 @@ namespace _2_Poo_Banco
             {
                 if (option == 1)
                 {
-
+                    foreach (User item in ListUsers)
+                    {
+                        if (AuxName == item.Name)
+                        {
+                            ToDeposit(item.Amount);
+                            MenuUsers(AuxName);
+                        }
+                    }
                     break;
                 }
                 else if (option == 2)
                 {
-                    
+                    foreach (User item in ListUsers)
+                    {
+                        if (AuxName == item.Name)
+                        {
+                            Withdraw(item.Amount);
+                            MenuUsers(AuxName);
+                        }
+                    }
                     break;
                 }
                 else if (option == 3)
                 {
+                    foreach (User item in ListUsers)
+                    {
+                        if (AuxName == item.Name)
+                        {
+                            ShowAmount(item.Amount);
+                            MenuUsers(AuxName);
+                        }
+                    }
                     break;
                 }
                 else

@@ -15,25 +15,27 @@ namespace _2_Poo_Banco
             this.Amount = 0;
         }
 
-        public void ToDeposit() //Depositar
+        public void ToDeposit(int Amount) //Depositar
         {
-
+            int AuxAmount;
             Console.WriteLine("Ingrese cuanto dinero va a depositar");
-            int AuxAmount = int.Parse(Console.ReadLine());
+            AuxAmount = int.Parse(Console.ReadLine());
             Amount += AuxAmount;
-            Console.WriteLine(AuxAmount);
-        }       
-
-        public void Withdraw() //Retirar
-        {
-            //amount -= withdraws;
-            Console.WriteLine("Ingrese el monto a retirar");
-            //Amount -= this.Amount;
+            Console.WriteLine(Amount);
         }
 
-        public void ShowAmount() //Mostrar monto
+        public void Withdraw(int Amount) //Retirar
         {
-            //Console.Write("El dinero en la cuenta es: " + Amount);
+            int AuxAmount;
+            Console.WriteLine("Ingrese el monto a retirar");
+            AuxAmount = int.Parse(Console.ReadLine());
+            Amount -= AuxAmount;
+            Console.WriteLine(Amount);
+        }
+
+        public void ShowAmount(int Amount) //Mostrar monto
+        {
+            Console.Write("El dinero en la cuenta es: " + Amount);
         }
 
     }
